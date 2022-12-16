@@ -1,7 +1,7 @@
 class Cupcake {
   String flavor;
   boolean sprinkles;
-  
+
   public Cupcake(String type, boolean hasSprinkles) {
     flavor = type;
     sprinkles = hasSprinkles;
@@ -28,11 +28,11 @@ class Bakery {
     bakeryCupcake.flavor = "vanila";
     giveTotal = "The " + bakeryCupcake.flavor + " cupcake is €" + price;
   }
-  
+
   public static void main(String[] args) {
     Cupcake chocolateSprinkle = new Cupcake("chocolate", true);
     Bakery myBakery = new Bakery(chocolateSprinkle, 3.25);
-    
+
     // Output a value of parameter object
     System.out.println("Our object sent as a parameter has a flavor of "  + myBakery.bakeryCupcake.flavor);
 
